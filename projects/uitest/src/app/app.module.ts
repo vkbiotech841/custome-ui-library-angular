@@ -14,12 +14,24 @@ import { AppComponent } from './app.component';
 // Import the module that you wish to currently working to chages component. So, need not to rebuild all the time.
 
 import { FontsModule } from 'projects/ui/src/lib/fonts/fonts.module';
+import { FontsPageComponent } from './pages/fonts-page/fonts-page.component';
+import { ButtonsPageComponent } from './pages/buttons-page/buttons-page.component';
+import { CardsPageComponent } from './pages/cards-page/cards-page.component';
+import { LandingPageComponent } from './layouts/landing-page/landing-page.component';
+import { HeaderComponent } from './pages/basics/header/header.component';
+import { FooterComponent } from './pages/basics/footer/footer.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FontsPageComponent,
+    ButtonsPageComponent,
+    CardsPageComponent,
+    LandingPageComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
