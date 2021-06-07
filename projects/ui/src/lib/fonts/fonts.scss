@@ -1,263 +1,265 @@
-@import './font-colors.scss';
+@import "./font-colors.scss";
+
+// @extend: is a inheritance in SCSS.
 
 .font01 {
-	font-size: 40px;
-	font-weight: 500;
-	line-height: 42px;
-	letter-spacing: 1.4px;
-	color: $color00;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 42px;
+  letter-spacing: 1.4px;
+  color: $color00;
 }
 
 .font02 {
-	font-size: 32px;
-	font-weight: 500;
-	line-height: 34px;
-	letter-spacing: 1.12px;
-	color: $color02;
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 1.12px;
+  color: $color00;
 }
 
 .font03 {
-	font-size: 24px;
-	font-weight: 500;
-	line-height: 26px;
-	letter-spacing: 0.24px;
-	color: $color00;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0.24px;
+  color: $color00;
 }
 
 .font04 {
-	font-size: 22px;
-	font-weight: 500;
-	line-height: 24px;
-	letter-spacing: 0.22px;
-	color: $color00;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.22px;
+  color: $color00;
 }
 
 .font05 {
-	font-size: 18px;
-	font-weight: 500;
-	line-height: 32px;
-	letter-spacing: 0.18px;
-	color: $color00;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  letter-spacing: 0.18px;
+  color: $color00;
 
-	&-2 {
-		@extend .font05;
-		color: $color03;
-	}
+  &-2 {
+    @extend .font05;
+    color: $color03;
+  }
 
-	&-3 {
-		@extend .font05;
-		color: $color03;
-	}
+  &-3 {
+    @extend .font05;
+    color: $color03;
+  }
 
-	&-4 {
-		@extend .font05;
-		color: $color03;
-	}
+  &-4 {
+    @extend .font05;
+    color: $color03;
+  }
 }
 
 .font06 {
-	font-size: 16px;
-	line-height: 26px;
-	letter-spacing: 0.16px;
-	color: $color00;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 0.16px;
+  color: $color00;
 
-	&-2 {
-		@extend .font06;
-		color: $color04;
-		font-weight: 500;
-	}
+  &-2 {
+    @extend .font06;
+    color: $color04;
+    font-weight: 500;
+  }
 
-	&-3 {
-		@extend .font06;
-		color: $color03;
-		font-weight: 500;
-	}
+  &-3 {
+    @extend .font06;
+    color: $color03;
+    font-weight: 500;
+  }
 
-	&-4 {
-		@extend .font06;
-		color: $color02;
-		font-weight: 500;
-	}
+  &-4 {
+    @extend .font06;
+    color: $color02;
+    font-weight: 500;
+  }
 
-	&-5 {
-		@extend .font06;
-		color: $color00;
-		font-weight: 400;
-	}
+  &-5 {
+    @extend .font06;
+    color: $color00;
+    font-weight: 400;
+  }
 
-	&-6 {
-		@extend .font06;
-		color: $color00;
-		font-style: italic;
-	}
+  &-6 {
+    @extend .font06;
+    color: $color00;
+    font-style: italic;
+  }
 
-	&-7 {
-		@extend .font06;
-		color: $color04;
-		font-weight: 400;
-	}
+  &-7 {
+    @extend .font06;
+    color: $color04;
+    font-weight: 400;
+  }
 }
 
 .font07 {
-	font-size: 14px;
-	line-height: 24px;
-	font-weight: 500;
-	color: $color00;
-	letter-spacing: 0.14px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 500;
+  color: $color00;
+  letter-spacing: 0.14px;
 
-	&-2 {
-		@extend .font07;
-		color: $color03;
-		font-weight: 700;
-	}
+  &-2 {
+    @extend .font07;
+    color: $color03;
+    font-weight: 700;
+  }
 
-	&-3 {
-		@extend .font07;
-		color: $color03;
-		font-weight: 500;
-	}
+  &-3 {
+    @extend .font07;
+    color: $color03;
+    font-weight: 500;
+  }
 
-	&-4 {
-		@extend .font07;
-		color: $color04;
-		font-weight: 500;
-	}
+  &-4 {
+    @extend .font07;
+    color: $color04;
+    font-weight: 500;
+  }
 
-	&-5 {
-		@extend .font07;
-		color: $color05;
-		font-weight: 500;
-	}
+  &-5 {
+    @extend .font07;
+    color: $color05;
+    font-weight: 500;
+  }
 
-	&-6 {
-		@extend .font07;
-		color: $color06;
-		font-weight: 500;
-	}
+  &-6 {
+    @extend .font07;
+    color: $color06;
+    font-weight: 500;
+  }
 
-	&-7 {
-		@extend .font07;
-		color: $color07;
-		font-weight: 500;
-	}
+  &-7 {
+    @extend .font07;
+    color: $color07;
+    font-weight: 500;
+  }
 
-	&-8 {
-		@extend .font07;
-		color: $color08;
-		font-weight: 500;
-	}
+  &-8 {
+    @extend .font07;
+    color: $color08;
+    font-weight: 500;
+  }
 
-	&-9 {
-		@extend .font07;
-		color: $color09;
-		font-weight: 500;
-	}
+  &-9 {
+    @extend .font07;
+    color: $color09;
+    font-weight: 500;
+  }
 
-	&-10 {
-		@extend .font07;
-		color: $color10;
-		font-weight: 500;
-	}
+  &-10 {
+    @extend .font07;
+    color: $color10;
+    font-weight: 500;
+  }
 
-	&-11 {
-		@extend .font07;
-		color: $color05;
-		font-style: italic;
-		font-weight: 500;
-	}
+  &-11 {
+    @extend .font07;
+    color: $color05;
+    font-style: italic;
+    font-weight: 500;
+  }
 
-	&-12 {
-		@extend .font07;
-		color: $color02;
-		font-weight: 500;
-	}
+  &-12 {
+    @extend .font07;
+    color: $color02;
+    font-weight: 500;
+  }
 }
 
 .font08 {
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 24px;
-	color: $color00;
-	letter-spacing: 0.14px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: $color00;
+  letter-spacing: 0.14px;
 
-	&-3 {
-		@extend .font08;
-		color: $color03;
-	}
+  &-2 {
+    @extend .font08;
+    color: $color03;
+  }
 
-	&-4 {
-		@extend .font08;
-		color: $color04;
-	}
+  &-3 {
+    @extend .font08;
+    color: $color04;
+  }
 
-	&-5 {
-		@extend .font08;
-		color: $color05;
-	}
+  &-4 {
+    @extend .font08;
+    color: $color05;
+  }
 
-	&-6 {
-		@extend .font08;
-		color: $color06;
-	}
+  &-5 {
+    @extend .font08;
+    color: $color06;
+  }
 
-	&-7 {
-		@extend .font08;
-		color: $color07;
-	}
+  &-6 {
+    @extend .font08;
+    color: $color07;
+  }
 
-	&-8 {
-		@extend .font08;
-		color: $color08;
-	}
+  &-7 {
+    @extend .font08;
+    color: $color08;
+  }
 
-	&-9 {
-		@extend .font08;
-		color: $color09;
-	}
+  &-8 {
+    @extend .font08;
+    color: $color09;
+  }
 
-	&-10 {
-		@extend .font08;
-		color: $color10;
-	}
+  &-9 {
+    @extend .font08;
+    color: $color10;
+  }
 }
 
 .font09 {
-	font-size: 12px;
-	font-weight: 500;
-	line-height: 20px;
-	letter-spacing: 0.12px;
-	color: $color00;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+  color: $color00;
 }
 
 .font10 {
-	font-size: 12px;
-	font-weight: 400;
-	line-height: 20px;
-	letter-spacing: 0.12px;
-	color: $color04;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0.12px;
+  color: $color04;
 }
 
 .font11 {
-	font-size: 12px;
-	font-style: italic;
-	font-weight: 400;
-	line-height: 20px;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 20px;
 
-	&-1 {
-		@extend .font11;
-		color: $color01;
-	}
+  &-2 {
+    @extend .font11;
+    color: $color01;
+  }
 
-	&-11 {
-		@extend .font11;
-		color: $color11;
-	}
+  &-3 {
+    @extend .font11;
+    color: $color11;
+  }
 }
 
 .font12 {
-	font-size: 10px;
-	font-weight: 500;
-	line-height: 12px;
-	letter-spacing: 0.12px;
-	color: $color03;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0.12px;
+  color: $color00;
 }
