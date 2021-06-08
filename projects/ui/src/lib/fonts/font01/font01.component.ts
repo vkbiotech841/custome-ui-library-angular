@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'font01',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./font01.component.scss']
 })
 export class Font01Component implements OnInit {
+
+  @Input() public color: string;
+  @Input() public class: string;
 
   constructor() { }
 
