@@ -115,7 +115,9 @@ $percentage: "%";
 $p: "p";
 
 @each $space in $spaceamounts {
-  /////// Margin ////////////////
+  ////////// MARGIN ////////////////
+
+  //////// Overall Margin /////////
 
   //   margin in rem
   .m-#{$space}#{$rem} {
@@ -198,5 +200,92 @@ $p: "p";
   //   margin right in %
   .mr-#{$space}#{$p} {
     margin-right: #{$space}#{$percentage};
+  }
+
+  ///////// PADDING ////////////////
+
+  /////// Overall padding ////////////////
+
+  //   padding in rem
+  .p-#{$space}#{$rem} {
+    padding: #{$space}#{$rem};
+  }
+
+  //   padding in px
+  .p-#{$space}#{$px} {
+    padding: #{$space}#{$px};
+  }
+
+  //   padding in %
+  .p-#{$space}#{$p} {
+    padding: #{$space}#{$percentage};
+  }
+
+  ////////// Padding Top ///////////
+
+  //   padding top in rem
+  .pt-#{$space}#{$rem} {
+    padding-top: #{$space}#{$rem};
+  }
+
+  //   padding top in px
+  .pt-#{$space}#{$px} {
+    padding-top: #{$space}#{$px};
+  }
+
+  //   padding top in %
+  .pt-#{$space}#{$p} {
+    padding-top: #{$space}#{$percentage};
+  }
+
+  ////////// Padding Bottom ///////////
+
+  //   padding bottom in rem
+  .pb-#{$space}#{$rem} {
+    padding-bottom: #{$space}#{$rem};
+  }
+
+  //   padding bottom in px
+  .pb-#{$space}#{$px} {
+    padding-bottom: #{$space}#{$px};
+  }
+
+  //   padding bottom in %
+  .pb-#{$space}#{$p} {
+    padding-bottom: #{$space}#{$percentage};
+  }
+
+  ////////// Padding left /////////
+
+  //   padding left in rem
+  .pl-#{$space}#{$rem} {
+    padding-left: #{$space}#{$rem};
+  }
+
+  //   padding lelf in px
+  .pl-#{$space}#{$px} {
+    padding-left: #{$space}#{$px};
+  }
+
+  //   padding left in %
+  .pl-#{$space}#{$p} {
+    padding-left: #{$space}#{$percentage};
+  }
+
+  ////////// Padding right /////////
+
+  //   padding right in rem
+  .pr-#{$space}#{$rem} {
+    padding-right: #{$space}#{$rem};
+  }
+
+  //   padding right in px
+  .pr-#{$space}#{$px} {
+    padding-right: #{$space}#{$px};
+  }
+
+  //   padding right in %
+  .pr-#{$space}#{$p} {
+    padding-right: #{$space}#{$percentage};
   }
 }
