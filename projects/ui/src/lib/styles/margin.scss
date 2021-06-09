@@ -1,0 +1,202 @@
+// Margin & Padding
+// Uses examples:
+// margin: m-1rem, m-1px, m-1p
+// margin-top: mt-1rem, mt-1px, mt-1p
+// margin-bottom: mb-1rem, mb-1px, mb-1p
+// margin-left: ml-1rem, ml-1px, ml-1p
+// margin-right: mr-1rem, mr-1px, mr-1p
+
+$spaceamounts: (
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20,
+  21,
+  22,
+  23,
+  24,
+  25,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31,
+  32,
+  33,
+  34,
+  35,
+  36,
+  37,
+  38,
+  39,
+  40,
+  41,
+  42,
+  43,
+  44,
+  45,
+  46,
+  47,
+  48,
+  49,
+  50,
+  51,
+  52,
+  53,
+  54,
+  55,
+  56,
+  57,
+  58,
+  59,
+  60,
+  61,
+  62,
+  63,
+  64,
+  65,
+  66,
+  67,
+  68,
+  69,
+  70,
+  71,
+  72,
+  73,
+  74,
+  75,
+  76,
+  77,
+  78,
+  79,
+  80,
+  81,
+  82,
+  83,
+  84,
+  85,
+  86,
+  87,
+  88,
+  89,
+  90,
+  91,
+  92,
+  93,
+  94,
+  95,
+  96,
+  97,
+  98,
+  99,
+  100
+);
+
+$px: "px";
+$rem: "rem";
+$percentage: "%";
+$p: "p";
+
+@each $space in $spaceamounts {
+  /////// Margin ////////////////
+
+  //   margin in rem
+  .m-#{$space}#{$rem} {
+    margin: #{$space}#{$rem};
+  }
+
+  //   margin in px
+  .m-#{$space}#{$px} {
+    margin: #{$space}#{$px};
+  }
+
+  //   margin in %
+  .m-#{$space}#{$p} {
+    margin: #{$space}#{$percentage};
+  }
+
+  ////////// Margin Top ///////////
+
+  //   margin top in rem
+  .mt-#{$space}#{$rem} {
+    margin-top: #{$space}#{$rem};
+  }
+
+  //   margin top in px
+  .mt-#{$space}#{$px} {
+    margin-top: #{$space}#{$px};
+  }
+
+  //   margin top in %
+  .mt-#{$space}#{$p} {
+    margin-top: #{$space}#{$percentage};
+  }
+
+  ////////// Margin Bottom ///////////
+
+  //   margin bottom in rem
+  .mb-#{$space}#{$rem} {
+    margin-bottom: #{$space}#{$rem};
+  }
+
+  //   margin bottom in px
+  .mb-#{$space}#{$px} {
+    margin-bottom: #{$space}#{$px};
+  }
+
+  //   margin bottom in %
+  .mb-#{$space}#{$p} {
+    margin-bottom: #{$space}#{$percentage};
+  }
+
+  ////////// Margin left /////////
+
+  //   margin left in rem
+  .ml-#{$space}#{$rem} {
+    margin-left: #{$space}#{$rem};
+  }
+
+  //   margin lelf in px
+  .ml-#{$space}#{$px} {
+    margin-left: #{$space}#{$px};
+  }
+
+  //   margin left in %
+  .ml-#{$space}#{$p} {
+    margin-left: #{$space}#{$percentage};
+  }
+
+  ////////// Margin right /////////
+
+  //   margin right in rem
+  .mr-#{$space}#{$rem} {
+    margin-right: #{$space}#{$rem};
+  }
+
+  //   margin right in px
+  .mr-#{$space}#{$px} {
+    margin-right: #{$space}#{$px};
+  }
+
+  //   margin right in %
+  .mr-#{$space}#{$p} {
+    margin-right: #{$space}#{$percentage};
+  }
+}
