@@ -2,6 +2,8 @@
 // Uses examples:
 
 // width: w-1rem, w-1px, w-1p
+// max-width: max-w-1rem, max-w-1px, max-w-1p
+// min-width: min-w-1rem, min-w-1px, min-w-1p
 
 $spaceamounts: (
   0,
@@ -121,6 +123,8 @@ $percentage: "%";
 $p: "p";
 
 @each $space in $spaceamounts {
+  /////// Normal width //////////////
+
   // Width in rem
   .w-#{$space}#{$rem} {
     width: #{$space}#{$rem} !important;
@@ -134,5 +138,39 @@ $p: "p";
   // Width in %
   .w-#{$space}#{$p} {
     width: #{$space}#{$percentage} !important;
+  }
+
+  ////////// max-width /////////////////////
+
+  // Max Width in rem
+  .max-w-#{$space}#{$rem} {
+    max-width: #{$space}#{$rem} !important;
+  }
+
+  // Width in px
+  .max-w-#{$space}#{$px} {
+    max-width: #{$space}#{$px} !important;
+  }
+
+  // Width in %
+  .max-w-#{$space}#{$p} {
+    max-width: #{$space}#{$percentage} !important;
+  }
+
+  ////////// min-width /////////////////////
+
+  // Max Width in rem
+  .min-w-#{$space}#{$rem} {
+    min-width: #{$space}#{$rem} !important;
+  }
+
+  // Width in px
+  .min-w-#{$space}#{$px} {
+    min-width: #{$space}#{$px} !important;
+  }
+
+  // Width in %
+  .min-w-#{$space}#{$p} {
+    min-width: #{$space}#{$percentage} !important;
   }
 }
