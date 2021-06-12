@@ -1,0 +1,66 @@
+@import "./responsiveness.scss";
+// Creating 12 grid system very similar to bootstrap.
+// Bootstrap Grid System allows up to 12 columns across the page.
+
+// .col- Extra Small ( < 576 px )
+// .col-sm- Small ( >= 576 px )
+// .col-md- Medium ( >= 768 px )
+// .col-lg- Large ( >= 992 px )
+// .col-xl- Extra Large ( >= 1200 px )
+
+//////////// GRID SYSTEM: USES //////////////////
+// grid-col-1, grid-col-sm-1, grid-col-md-1, grid-col-lg-1, grid-col-xl-1
+
+$extra-small-screen: 576px;
+$medium-screen: 768px;
+$large-screen: 992px;
+$extra-large-screen: 1200px;
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+$columns: 12;
+
+@for $i from 1 through $columns {
+  // For Extra Small Screen ( < 576 px)
+  @include media-below($extra-small-screen) {
+    .grid-col-#{$i} {
+      flex: 0 0 100% / $columns * $i;
+    }
+  }
+
+  // For Extra Small Screen ( >= 576 px)
+  @include media-above($extra-small-screen) {
+    .grid-col-sm-#{$i} {
+      flex: 0 0 100% / $columns * $i;
+    }
+  }
+
+  // For Extra Small Screen ( >= 768 px)
+  @include media-above($medium-screen) {
+    .grid-col-md-#{$i} {
+      flex: 0 0 100% / $columns * $i;
+    }
+  }
+
+  // For Extra Small Screen ( >= 992 px)
+  @include media-above($large-screen) {
+    .grid-col-lg-#{$i} {
+      flex: 0 0 100% / $columns * $i;
+    }
+  }
+
+  // For Extra Small Screen ( >= 1200 px)
+  @include media-above($extra-large-screen) {
+    .grid-col-xl-#{$i} {
+      flex: 0 0 100% / $columns * $i;
+    }
+  }
+
+  // offset example
+  .col-offset-#{$i} {
+    margin-left: 0 0 100% / $columns * $i;
+  }
+}
