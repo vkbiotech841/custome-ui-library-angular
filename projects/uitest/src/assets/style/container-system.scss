@@ -1,0 +1,78 @@
+@import "./responsiveness.scss";
+
+/////////// Container System: Uses ////////////
+// container : .container-c
+// container-fluid: .container-fluid-c
+
+$extra-small-screen: 576px;
+$medium-screen: 768px;
+$large-screen: 992px;
+$extra-large-screen: 1200px;
+$extra-extra-large-screen: 1400px;
+
+@include media-below($extra-small-screen) {
+  .container-c {
+    max-width: 100%;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-right: auto;
+    margin-left: auto;
+    // to do: add x and y gutter to the padding
+  }
+}
+
+@include media-above($extra-small-screen) {
+  .container-c {
+    max-width: 540px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@include media-above($medium-screen) {
+  .container-c {
+    max-width: 720px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@include media-above($large-screen) {
+  .container-c {
+    max-width: 960px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@include media-above($extra-large-screen) {
+  .container-c {
+    max-width: 1140px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@include media-above($extra-extra-large-screen) {
+  .container-c {
+    max-width: 1320px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+.container-c {
+  .container-fluid-c {
+    width: 100%;
+  }
+}
